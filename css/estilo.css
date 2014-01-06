@@ -317,3 +317,8 @@ legend
 #menu>ul li:hover ul,#menu>ul ul li:hover ul,#menu>ul ul ul li:hover ul,#menu>ul li.iehover ul,#menu>ul ul li.iehover ul,#menu>ul ul ul li.iehover ul {
  display: block;
 }
+
+/*Ventana emergente*/
+#dialogo{
+	display:none;
+}

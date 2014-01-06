@@ -2,7 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Sismemox - Sistema Memorizador</title>
+<meta name="description" content="{head_description}">
+<meta name="keywords" content="{head_keywords}">
+<meta name="author" content="@dxrj45">
+<title>{head_titulo}</title>
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->

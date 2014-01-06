@@ -1,18 +1,29 @@
 <?php
 class Pages extends CI_Controller{
-
+/*Carga siguientes paginas estaticas
+	-Nosotros
+*/
 	public function view($page='home')
 	{
 		if(! file_exists('application/views/pages/'.$page.'.php'))
 		{
 			//Whoops, we don't have a page for that!
+			
 			show_404();
 		}
 
-		$data['title']=ucfirst($page);//Capitalize the first letter
+		$this->load->library('parser');
 
-		$this->load->view('templates/header',$data);
-		$this->load->view('pages/'.$page,$data);
-		$this->load->view('templates/footer',$data);
+
+		$data= array(
+			'head_titulo' => 'Sismemox - '.ucfirst($page),
+			'head_descripcion' =>'Sistema de memorizacion interactiva',
+			'head_keywords'=> 'Sismemox, sistema de memoria'
+
+			);
+
+		$this->parser->parse('templates/header',$data);
+		$this->load->view('pages/'.$page);
+		$this->load->view('templates/footer');
 	}
-}
+}	
