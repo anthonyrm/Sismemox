@@ -4,7 +4,7 @@
 header,nav,section,article,aside,footer,figure{
 	display:block;
 }
-.limpiar_tu_culito{
+.limpiar{
 	clear:both;
 }
 body{
